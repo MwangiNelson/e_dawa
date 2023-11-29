@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-green: #fefefe;
+  --secondary-green: #40ff00;
+
+  --primary-font: "Playfair Display", serif;
+  --secondary-font: "Playfair Display", serif;
+  --tertiary-font: "Roboto", sans-serif;
+}
+
+* {
+  font-family: var(--primary-font);
+}
+body {
+  width: 100vw;
+  max-width: 100%;
+}
+.object-cover {
+  object-fit: cover;
+}
+.object-contain {
+  object-fit: contain !important;
+}
+.text-secondary-green {
+  color: var(--secondary-green);
+}
+.min-height-100 {
+  height: fit-content !important;
+  min-height: 100vh !important;
+}
+.z-infinite {
+  z-index: 1000000;
+}
+
+.text-bold {
+  font-weight: bold !important;
+}
+.font-tertiary {
+  font-family: var(--tertiary-font) !important;
+}
+.bg-primary-green {
+  background-color: var(--primary-green);
+}
+.bg-secondary-green {
+  background-color: var(--secondary-green);
+}
+.animate-down {
+  transition: all ease 0.5s;
+}
+
+.img-contain {
+  object-fit: contain;
+}
+.img-cover {
+  object-fit: cover;
+}
+.text-bold {
+  font-weight: bold !important;
+}
+.logo-img {
+  width: 15vw;
+  height: 12vh;
+  object-fit: cover;
+}
+.vh-25 {
+  height: 25vh;
+}
+.vh-50 {
+  height: 50vh !important;
+}
+.vh-75 {
+  height: 75vh !important;
+}
+.font-primary {
+  font-family: var(--primary-font) !important;
+}
+.z-top {
+  z-index: 1000;
+}
+.font-mono {
+  font-family: monospace !important;
+}
+.placeholder-light::placeholder {
+  color: white;
+}
+.vw-100 {
+  width: 100vw !important;
+}
+.jce {
+  justify-content: end;
+}
+.underline {
+  background-color: gray;
+  border-radius: 10px;
+}
+.overflow-ellipsis {
+  display: inline-block;
+  width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mouse-pointer {
+  cursor: pointer;
+}
+.text-sm {
+  font-weight: normal;
+  font-size: x-small !important;
+}
+.w-card {
+  width: 18vw !important;
+}
+.round-btn {
+  width: 2em;
+  height: 2em;
+}
+.round-btn:hover {
+  background-color: rgb(172, 52, 52);
+}
+.w-fit {
+  width: fit-content !important;
+}
+.w-50vw {
+  width: 36vw;
+}
+.cart-card {
+  top: 10%;
+  z-index: 10000;
+}
+.y-ellipsis {
+  display: inline-block;
+  width: 75%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pill {
+  border-radius: 99px;
+}
+.h-fit {
+  height: fit-content;
+}
+.max-h-75 {
+  /* height: 50vh; */
+  max-height: 45vh;
+  overflow-y: scroll;
+
+  padding-inline: 1em;
+}
+.w-30 {
+  width: 30%;
+}
+.img-cart {
+  object-fit: cover;
+  width: 30%;
+  height: 20vh;
+}
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+.app-input {
+  background-color: var(--primary-green);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  font-size: 1.35em;
+  padding-inline: 1em;
+}
+.close-btn {
+  width: 4vw;
+  height: 4vw;
+  position: absolute;
+  background: transparent;
+  border: 0;
+  outline: none;
+  top: 5vw;
+  right: 25%;
+  border-radius: 3px;
+  padding: 0.5em;
+  transition: all ease 0.5s;
+}
+.w-fit {
+  width: fit-content !important;
+}
+a {
+  text-decoration: none !important;
+}
+.icon {
+  width: 1.45em;
+  height: 1.45em;
+}
+.border-primary-bg {
+  border: 2px solid var(--primary-green);
+}
+.close-btn:hover {
+  background: rgba(255, 0, 0, 0.1);
+}
+.animate-in {
+  animation: animateEntry 0.5s ease forwards;
+  transition: all ease 0.5s;
+}
+.animate-exit {
+  animation: animateExit 1s ease forwards;
+  transition: all ease 1s;
+}
+.jcc {
+  justify-content: center;
+}
+.tac {
+  text-align: center;
+}
+.ais {
+  align-items: start;
+}
+.aie {
+  align-items: end;
+}
+.jcs {
+  justify-content: start;
+}
+.aic {
+  align-items: center;
+}
+.tas {
+  text-align: start;
+}
+.jsb {
+  justify-content: space-between;
+}
+.vh-100-min {
+  min-height: 100vh;
+}
+.bg-blur {
+  backdrop-filter: blur(3px);
+}
+.list-style-none {
+  list-style: none;
+}
+
+@keyframes animateEntry {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animateExit {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+.w-15 {
+  width: 20vw;
+}
+.user-img {
+  width: 2.5vw;
+  height: 2.5vw;
+  object-fit: contain;
+}
+.vh-25 {
+  height: 25vh;
+  min-height: 25vh;
+}
+.border-dashed {
+  border-style: dashed !important;
+}
+.hover-item {
+  position: absolute;
+  top: 100%;
+  width: max-content !important;
+  right: 0;
+}
+.hover-item::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  right: 12%;
+  position: absolute;
+  top: -4.5%;
+  transform: rotate(45deg);
+  background-color: white;
+}
+.fs-xsm {
+  font-size: 0.5em;
+}
+.fs-sm {
+  font-size: 0.75em;
+}
+.btn-primary-blue {
+  background-color: var(--primary-green);
+}
+.text-primary-blue {
+  color: var(--primary-green);
+}
+.bg-trans {
+  background-color: #c8effaa7;
+}
+.vh-15 {
+  height: 20vh;
+}
+
+.card {
+  width: 100%;
+  max-width: 290px;
+  height: 70px;
+  background: #353535;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  backdrop-filter: blur(10px);
+  transition: 0.5s ease-in-out;
+  flex-direction: row;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background: linear-gradient(#d7cfcf, #9198e5);
+}
+
+.card:hover > .img {
+  transition: 0.5s ease-in-out;
+  background: linear-gradient(#9198e5, #712020);
+}
+
+.textBox {
+  width: calc(100% - 90px);
+  margin-left: 10px;
+  color: white;
+  font-family: "Poppins" sans-serif;
+}
+
+.textContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.span {
+  font-size: 10px;
+}
+
+.h1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.p {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.w-50min {
+  width: 23%;
+}
